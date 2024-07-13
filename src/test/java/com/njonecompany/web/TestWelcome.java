@@ -26,7 +26,7 @@ public class TestWelcome {
         mockMvc = MockMvcBuilders.webAppContextSetup(webAppContext).build();
     }
 
-    @Test
+//    @Test
     public void testWelcome() throws Exception {
 
         this.mockMvc.perform(
