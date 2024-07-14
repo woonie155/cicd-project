@@ -1,13 +1,13 @@
 - hosts: all
   tasks:
-    - name: stop current running container
-      command: docker stop my_cicd_project
-      ignore_errors: yes
+    - name: create a docker image with deployed waf file
+      command: docker build -t woonie155/cicd-project-ansible .
+      args:
+        chdir: /root
 
-    - name: remove stopped cotainer
-      command: docker rm my_cicd_project
-      ignore_errors: yes
+    - name: push the image on Docker Hub
+      command: docker push woonie155/cicd-project-ansible
 
-    - name: remove current docker image
-      command: docker rmi cicd-project-ansible
+    - name: remove the docker image from the ansible server
+      command: docker rmi woonie155/cicd-project-ansible
       ignore_errors: yes
