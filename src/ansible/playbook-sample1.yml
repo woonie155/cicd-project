@@ -1,0 +1,9 @@
+- name: Add an ansible hosts
+  hosts: localhost
+  tasks:
+    - name: Add an ansible hosts
+      blockinfile:
+        path: /etc/ansible/hosts
+        block: |
+          [mygroup]
+          172.17.0.5
