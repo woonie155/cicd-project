@@ -1,0 +1,9 @@
+- name: create pods using deployment
+  hosts: windows
+
+  tasks:
+    - name: delete the previous deployment
+      win_command: kubectl delete deployment.apps/cicd-deployment
+
+    - name: create a deployment
+      win_command: kubectl apply -f D:\infra\cicd-web-project\src\k8s\cicd-devops-deployment.yml

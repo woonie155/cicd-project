@@ -1,0 +1,6 @@
+- name: create service for deployment
+  hosts: windows
+
+  tasks:
+    - name: create a service
+      win_command: kubectl apply -f D:\infra\cicd-web-project\src\k8s\cicd-devops-service.yml
