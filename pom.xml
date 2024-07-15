@@ -6,7 +6,7 @@
     <groupId>com.njonecompany.web</groupId>
     <artifactId>web</artifactId>
     <packaging>war</packaging>
-    <version>1.0</version>
+    <version>1</version>
     <name>cicd-web-project maven webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
@@ -98,14 +98,12 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.2.2</version>
             </plugin>
-
             <!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>4.0.0.4121</version>
+                <version>3.9.1.2184</version>
             </plugin>
-
         </plugins>
     </build>
 
