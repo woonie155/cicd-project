@@ -25,7 +25,7 @@ public class WelcomeController {
     }
 
     private String getMessage() {
-        return "cicd test2";
+        return "cicd test3";
     }
 
 }
