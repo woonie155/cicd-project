@@ -54,13 +54,18 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- for web servlet -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
-
+<!--        &lt;!&ndash; for web servlet &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>javax.servlet</groupId>-->
+<!--            <artifactId>javax.servlet-api</artifactId>-->
+<!--            <version>3.1.0</version>-->
+<!--        </dependency>-->
+            <dependency>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>6.0.0</version>
+                <scope>provided</scope>
+            </dependency>
         <!-- Some containers like Tomcat don't have jstl library -->
         <dependency>
             <groupId>javax.servlet</groupId>
