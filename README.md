@@ -13,7 +13,7 @@ terminus, docker, jenkins, ansible, k8s(Miniqube), sonarqube
 # jenkins CI/CD 구조
 ![image](https://github.com/user-attachments/assets/1f9003a5-bbfe-4ad4-b3f9-7b5415dfdf3a)
 
-![k8s-project drawio](https://github.com/user-attachments/assets/206794a7-6c46-47dc-a411-4895bbf8843c)
+![k8s-project drawio (1)](https://github.com/user-attachments/assets/ac998dd6-d1bf-467b-a8d1-4920bf83054a)
 
 
 # sonarQube 분석
